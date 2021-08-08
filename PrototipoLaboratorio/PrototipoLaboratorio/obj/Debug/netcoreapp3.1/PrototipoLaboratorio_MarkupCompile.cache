@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-4-2102301030
+6829721615
 
-7958369572
+91160484217
 2011894084544
-MainWindow.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;Ventanas\wpfRequerimientosPaciente.xaml;
 
 False
 

@@ -69,7 +69,7 @@
 					</Image>
 				</MenuItem.Icon>
                 <MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
-				<MenuItem Header="MenuItem"/>
+                <MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
 			</MenuItem>
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -79,9 +79,8 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
-			</MenuItem>
+				<MenuItem x:Name="___Item_" Header="MenuItem"/>
+            </MenuItem>
 			<MenuItem x:Name="btnFacturacion" Header="   Facturación" Width="113" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Facturacion.png" Margin="-4,-15,-25,-14">
@@ -124,8 +123,9 @@
 					</Image>
 				</MenuItem.Icon>
                 <MenuItem x:Name="btnEmpleado" Header="Empleados" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnEmpleado_Click"/>
-				<MenuItem Header="MenuItem"/>
-			</MenuItem>
+                <MenuItem x:Name="btnPruebaCBX" Header="PruebaCBX" ItemsSource="{Binding ClickEvent, ElementName=btnPruebaCBX}" Click="btnPruebaCBX_Click"/>
+                <MenuItem Header="MenuItem"/>
+            </MenuItem>
 			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Finanzas.png" Margin="-4,-15,-25,-14">
