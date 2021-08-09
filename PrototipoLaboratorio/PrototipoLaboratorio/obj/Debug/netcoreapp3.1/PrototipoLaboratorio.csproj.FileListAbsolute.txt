@@ -63,3 +63,5 @@ D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021
 D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\PruebaComboBox.baml
 D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosPaciente.g.cs
 D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfRequerimientosPaciente.baml
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorCitas.g.cs
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\wpfGestorCitas.baml

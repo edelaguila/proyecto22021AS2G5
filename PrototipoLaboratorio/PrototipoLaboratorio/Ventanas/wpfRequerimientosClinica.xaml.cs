@@ -149,14 +149,6 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
-        private void txtIdRequerimiento_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void txtDescripcion_Copy_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+ 
     }
 }

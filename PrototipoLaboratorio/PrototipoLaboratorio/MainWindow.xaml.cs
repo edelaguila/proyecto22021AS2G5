@@ -70,6 +70,11 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfRequerimientosPaciente());
         }
 
+        private void btnAgendarCita_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestorCitas());
+        }
+
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
@@ -81,6 +86,8 @@ namespace PrototipoLaboratorio
         {
             this.pnlVentanas.Children.Clear();
         }
+
+
     }
 
 }

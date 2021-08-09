@@ -45,7 +45,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem x:Name="menuItem" Header="MenuItem"/>
+                <MenuItem x:Name="btnAgendarCita" Header="Agendar Cita" ItemsSource="{Binding ClickEvent, ElementName=btnAgendarCita}" Click="btnAgendarCita_Click"/>
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
