@@ -1,13 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "QIbDSKNpGnRfzmJxlo3WKI1ETV+QWfHwdmD1HgR5wVrBPIXXbOcMSdsExy9cIcxENzKCWQbTA0CmxQnq0wntUw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\sucel\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\sucel\\.nuget\\packages\\system.data.odbc\\5.0.0\\system.data.odbc.5.0.0.nupkg.sha512"
-=======
   "dgSpecHash": "pgEhXmH8rvFG9oAxe+zq+Vdb9kecLOtPPTMz1ZNnJfXPgk7APyabtPX8U7h73czk5J6eZD8KPlZHW5CCC4NaXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
@@ -32,7 +24,13 @@
     "C:\\Users\\sucel\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
->>>>>>> 7799db060905b7cdd6e391f37b4460767eafd59f
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

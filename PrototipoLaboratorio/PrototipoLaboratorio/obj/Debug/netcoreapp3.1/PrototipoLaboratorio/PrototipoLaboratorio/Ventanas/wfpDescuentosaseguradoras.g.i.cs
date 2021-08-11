@@ -174,8 +174,8 @@ namespace PrototipoLaboratorio.Ventanas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/prototipolaboratorio/prototipolaboratorio/ventana" +
-                    "s/wfpdescuentosaseguradoras.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/prototipolaboratorio/prototipolaboratori" +
+                    "o/ventanas/wfpdescuentosaseguradoras.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
