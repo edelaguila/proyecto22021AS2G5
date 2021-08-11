@@ -45,7 +45,8 @@ namespace PrototipoLaboratorio
         {
 
         }
-        private void btnGestionusuario_Click(object sender, RoutedEventArgs e){
+        private void btnGestionusuario_Click(object sender, RoutedEventArgs e)
+        {
             funGestorventas(new Ventanas.wpfGestorusuario());
         }
 

@@ -69,15 +69,11 @@
 					</Image>
 				</MenuItem.Icon>
                 <MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
-<<<<<<< HEAD
-				<MenuItem Header="MenuItem"/>
-			</MenuItem>
-=======
+
                 <MenuItem x:Name="btnExamen" Header="Examenes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnExamen_Click"/>
                 <MenuItem x:Name="btnTipo_examen" Header="Tipo de examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_examen_Click"/>
                 <MenuItem x:Name="btTipo_muestra" Header="Tipo de muestra" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_muestra_Click"/>
             </MenuItem>
->>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Cotizaciones.png" Margin="-4,-15,-25,-14">

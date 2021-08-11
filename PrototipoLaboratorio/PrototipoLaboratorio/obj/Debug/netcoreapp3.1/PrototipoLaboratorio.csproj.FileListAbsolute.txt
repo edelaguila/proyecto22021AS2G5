@@ -164,3 +164,8 @@ C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLabo
 C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Tipo_examen.baml
 C:\Users\GiancarloS\Desktop\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Tipo_muestra.baml
 >>>>>>> 04703d5135c526ad9b263c3e74e7d37c6b9e8bd8
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Examen.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Formas_pago.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Paquete.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Tipo_examen.g.cs
+C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\Ventanas\Tipo_muestra.g.cs

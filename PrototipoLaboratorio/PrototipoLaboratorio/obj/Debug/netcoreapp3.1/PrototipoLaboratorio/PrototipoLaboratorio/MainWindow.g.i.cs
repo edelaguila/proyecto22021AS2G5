@@ -190,8 +190,8 @@ namespace PrototipoLaboratorio {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/prototipolaboratorio/prototipolaboratori" +
-                    "o/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/prototipolaboratorio/prototipolaboratorio/mainwin" +
+                    "dow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

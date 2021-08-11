@@ -60,8 +60,8 @@ namespace PrototipoLaboratorio {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;V1.0.0.0;component/prototipolaboratorio/prototipolaboratori" +
-                    "o/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrototipoLaboratorio;component/prototipolaboratorio/prototipolaboratorio/app.xam" +
+                    "l", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
