@@ -8,6 +8,7 @@ C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\obj\De
 PrototipoLaboratorio
 none
 false
+<<<<<<< HEAD
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
 191314561999
@@ -15,6 +16,15 @@ C:\Users\sucel\Desktop\PROYECTO\PrototipoLaboratorio\PrototipoLaboratorio\App.xa
 411787548205
 208337906047
 MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\App.xaml;PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAseguradoras.xaml;PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorusuario.xaml;Ventanas\Examen.xaml;Ventanas\Formas_pago.xaml;Ventanas\Paquete.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\Tipo_examen.xaml;Ventanas\Tipo_muestra.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;
+=======
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+7-1224862177
+
+10-296119909
+2011894084544
+MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorCitas.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;Ventanas\wpfRequerimientosPaciente.xaml;
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
 
 True
 

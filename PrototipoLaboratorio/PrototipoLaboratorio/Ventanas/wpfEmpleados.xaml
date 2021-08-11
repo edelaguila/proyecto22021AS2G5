@@ -133,6 +133,12 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="lblNombreEmpleado_Copy5" Content="EDAD:" HorizontalAlignment="Left" Margin="466,374,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <ComboBox x:Name="cbxPuesto" HorizontalAlignment="Left" Margin="1008,377,0,0" VerticalAlignment="Top" Width="222" Height="32" SelectionChanged="cbxPuesto_SelectionChanged"/>
+            <Label x:Name="lblIdPuesto" Content="-" HorizontalAlignment="Left" Margin="1241,380,0,0" VerticalAlignment="Top"/>
+            <Label Content="ID" HorizontalAlignment="Left" Margin="1238,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.116"/>
+            <Label x:Name="lblIdSede" Content="-" HorizontalAlignment="Left" Margin="1241,519,0,0" VerticalAlignment="Top"/>
+            <Label Content="ID" HorizontalAlignment="Left" Margin="1238,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.116"/>
+            <ComboBox x:Name="cbxSede" HorizontalAlignment="Left" Margin="1013,510,0,0" VerticalAlignment="Top" Width="217" Height="31" SelectionChanged="cbxSede_SelectionChanged"/>
         </Grid>
         <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="151,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
@@ -170,6 +176,7 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy9" Content="COLEGIADO:" HorizontalAlignment="Left" Margin="470,507,0,0" VerticalAlignment="Top" Height="38" Width="106" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+<<<<<<< HEAD
         <TextBox x:Name="txtIdPuesto" HorizontalAlignment="Left" Margin="1005,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.3"/>
@@ -178,6 +185,8 @@
                 <SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
+=======
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
         <Label x:Name="lblNombreEmpleado_Copy10" Content="ID PUESTO:" HorizontalAlignment="Left" Margin="884,378,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
         <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="1005,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="38" TextAlignment="Left" FontSize="16" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" FontWeight="Normal">
             <TextBox.CaretBrush>
@@ -188,5 +197,6 @@
             </TextBox.Background>
         </TextBox>
         <Label x:Name="lblNombreEmpleado_Copy11" Content="STATUS:" HorizontalAlignment="Left" Margin="884,438,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblNombreEmpleado_Copy4" Content="SEDE:" HorizontalAlignment="Left" Margin="884,512,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
     </Grid>
 </UserControl>

@@ -45,7 +45,7 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem x:Name="menuItem" Header="MenuItem"/>
+                <MenuItem x:Name="btnAgendarCita" Header="Agendar Cita" ItemsSource="{Binding ClickEvent, ElementName=btnAgendarCita}" Click="btnAgendarCita_Click"/>
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
@@ -69,11 +69,16 @@
 					</Image>
 				</MenuItem.Icon>
                 <MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
+<<<<<<< HEAD
 
                 <MenuItem x:Name="btnExamen" Header="Examenes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnExamen_Click"/>
                 <MenuItem x:Name="btnTipo_examen" Header="Tipo de examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_examen_Click"/>
                 <MenuItem x:Name="btTipo_muestra" Header="Tipo de muestra" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_muestra_Click"/>
             </MenuItem>
+=======
+                <MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
+			</MenuItem>
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Cotizaciones.png" Margin="-4,-15,-25,-14">
@@ -82,9 +87,8 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-				<MenuItem Header="MenuItem"/>
-				<MenuItem Header="MenuItem"/>
-			</MenuItem>
+				<MenuItem x:Name="___Item_" Header="MenuItem"/>
+            </MenuItem>
 			<MenuItem x:Name="btnFacturacion" Header="   Facturación" Width="113" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Facturacion.png" Margin="-4,-15,-25,-14">

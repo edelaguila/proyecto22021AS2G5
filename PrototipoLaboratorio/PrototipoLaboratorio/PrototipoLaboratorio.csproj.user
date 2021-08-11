@@ -13,10 +13,16 @@
     <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ventanas\wpfGestorCitas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Ventanas\wpfGestorusuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Ventanas\wpfRequerimientosClinica.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfRequerimientosPaciente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,6 +33,7 @@
     <Page Update="Ventanas\PruebaComboBox.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Ventanas\wpfPacientes.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -48,7 +55,12 @@
     <Page Update="Ventanas\Tipo_muestra.xaml">
       <SubType>Designer</SubType>
     </Page>
+=======
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
     <Page Update="Ventanas\wpfEmpleados.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorCitas.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorusuario.xaml">
@@ -58,6 +70,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfRequerimientosClinica.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfRequerimientosPaciente.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

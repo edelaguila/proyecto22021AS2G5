@@ -66,6 +66,19 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.PruebaComboBox());
         }
 
+<<<<<<< HEAD
+=======
+        private void btnRequerimientosP_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfRequerimientosPaciente());
+        }
+
+        private void btnAgendarCita_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfGestorCitas());
+        }
+
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
@@ -79,6 +92,7 @@ namespace PrototipoLaboratorio
         }
 
 
+<<<<<<< HEAD
         private void btnExamen_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.Examen());
@@ -108,6 +122,8 @@ namespace PrototipoLaboratorio
         {
 
         }
+=======
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
     }
 
 }

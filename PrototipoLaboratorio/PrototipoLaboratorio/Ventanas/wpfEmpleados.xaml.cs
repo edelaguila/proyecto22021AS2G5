@@ -25,6 +25,8 @@ namespace PrototipoLaboratorio.Ventanas
         public wpfEmpleados()
         {
             InitializeComponent();
+            cargarCbxPuesto();
+            cargarCbxSede();
         }
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
@@ -39,7 +41,7 @@ namespace PrototipoLaboratorio.Ventanas
             string cadena = "INSERT INTO" +
                 " empleado (id_empleado, cui_empleado, nit_empleado, nombre_empleado, apellido_empleado," +
                 " genero_empleado, edad_empleado, telefono_empleado, direccion_empleado, email_empleado," +
-                " status_empleado, id_puesto, colegiado_empleado) VALUES (" +
+                " status_empleado, id_puesto, colegiado_empleado, id_sede) VALUES (" +
                 "'" + txtIdEmpleado.Text + "', '"
                  + txtCui.Text + "', '"
                  + txtNit.Text + "', '"
@@ -51,8 +53,9 @@ namespace PrototipoLaboratorio.Ventanas
                  + txtDireccion.Text + "', '"
                  + txtEmail.Text + "', '"
                  + txtStatus.Text + "', '"
-                 + txtIdPuesto.Text + "', '"
-                 + txtColegiado.Text + "' ); ";
+                 + lblIdPuesto.Content + "', '"
+                 + txtColegiado.Text + "', '"
+                 + lblIdSede.Content + "' ); ";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
@@ -70,7 +73,14 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
+<<<<<<< HEAD
             txtIdPuesto.Text = "";
+=======
+            lblIdSede.Content = "-";
+            lblIdPuesto.Content = "-";
+            cbxSede.Items.Clear();
+            cbxPuesto.Items.Clear();
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
             txtColegiado.Text = "";
         }
 
@@ -81,6 +91,10 @@ namespace PrototipoLaboratorio.Ventanas
             
                 try
                 {
+<<<<<<< HEAD
+=======
+                cargarCbxPuesto();
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
                     //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
                     string cadena = "update CLINICA1.EMPLEADO set id_empleado ='" + this.txtIdEmpleado.Text
                         + "',cui_empleado ='" + this.txtCui.Text
@@ -93,8 +107,14 @@ namespace PrototipoLaboratorio.Ventanas
                         + "',direccion_empleado='" + this.txtDireccion.Text
                         + "',email_empleado='" + this.txtEmail.Text
                         + "',status_empleado='" + this.txtStatus.Text
+<<<<<<< HEAD
                         + "',id_puesto='" + this.txtIdPuesto.Text
                         + "',colegiado_empleado='" + this.txtColegiado.Text
+=======
+                        + "',id_puesto='" + this.lblIdPuesto.Content
+                        + "',colegiado_empleado='" + this.txtColegiado.Text
+                        + "',id_sede='" + lblIdSede.Content 
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
 
                         + "'where id_empleado='" + this.txtIdEmpleado.Text + "';";
 
@@ -121,9 +141,17 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
+<<<<<<< HEAD
             txtIdPuesto.Text = "";
             txtColegiado.Text = "";
 
+=======
+            cbxPuesto.Items.Clear();
+            txtColegiado.Text = "";
+            cbxSede.Items.Clear();
+            lblIdSede.Content = "-";
+            lblIdPuesto.Content = "-";
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
             txtIdEmpleado.IsEnabled = true;
             btnInsertar.IsEnabled = true;
         }
@@ -158,8 +186,14 @@ namespace PrototipoLaboratorio.Ventanas
                         txtDireccion.Text = busqueda["direccion_empleado"].ToString();
                         txtEmail.Text = busqueda["email_empleado"].ToString();
                         txtStatus.Text = busqueda["status_empleado"].ToString();
+<<<<<<< HEAD
                         txtIdPuesto.Text = busqueda["id_puesto"].ToString();
                         txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
+=======
+                        lblIdPuesto.Content = busqueda["id_puesto"].ToString();
+                        txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
+                        lblIdSede.Content = busqueda["id_sede"].ToString();
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
                     }
                     else
                     {
@@ -195,9 +229,17 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
+<<<<<<< HEAD
             txtIdPuesto.Text = "";
             txtColegiado.Text = "";
 
+=======
+            cbxPuesto.Items.Clear();
+            txtColegiado.Text = "";
+            cbxSede.Items.Clear();
+            lblIdSede.Content = "-";
+            lblIdPuesto.Content = "-";
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
             txtIdEmpleado.IsEnabled = true;
             btnInsertar.IsEnabled = true;
         }
@@ -233,6 +275,7 @@ namespace PrototipoLaboratorio.Ventanas
                 txtDireccion.Text = "";
                 txtEmail.Text = "";
                 txtStatus.Text = "";
+<<<<<<< HEAD
                 txtIdPuesto.Text = "";
                 txtColegiado.Text = "";
 
@@ -243,6 +286,93 @@ namespace PrototipoLaboratorio.Ventanas
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+=======
+                cbxPuesto.Items.Clear();
+                txtColegiado.Text = "";
+                cbxSede.Items.Clear();
+                lblIdSede.Content = "-";
+                lblIdPuesto.Content = "-";
+                txtIdEmpleado.IsEnabled = true;
+                btnInsertar.IsEnabled = true;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void cargarCbxPuesto()
+        {
+
+            string cadena = "SELECT nombre_puesto FROM PUESTO";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            cbxPuesto.Items.Clear();
+            while (busqueda.Read())
+            {
+                cbxPuesto.Items.Add(busqueda["nombre_puesto"].ToString());
+            }
+
+
+        }
+
+        private void cbxPuesto_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string cadena = "SELECT id_puesto FROM PUESTO WHERE nombre_puesto = '" + cbxPuesto.SelectedItem + "';";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            while (busqueda.Read())
+            {
+                lblIdPuesto.Content = busqueda["id_puesto"].ToString();
+            }
+        }
+
+        /*COMBO BOX SEDE*/
+        void cargarCbxSede()
+        {
+
+            string cadena = "SELECT nombre_sede FROM SEDE";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            cbxSede.Items.Clear();
+            while (busqueda.Read())
+            {
+                cbxSede.Items.Add(busqueda["nombre_sede"].ToString());
+            }
+
+
+        }
+
+        private void cbxSede_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string cadena = "SELECT id_sede FROM SEDE WHERE nombre_sede = '" + cbxSede.SelectedItem + "';";
+
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            while (busqueda.Read())
+            {
+                lblIdSede.Content = busqueda["id_sede"].ToString();
+>>>>>>> 076941c0598aa625faf85ae6ed0ec4c91387d08f
             }
         }
     }
