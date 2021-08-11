@@ -68,13 +68,12 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
-                <MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
-                <MenuItem x:Name="btnExamen" Header="Examenes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnExamen_Click"/>
-                <MenuItem x:Name="btnTipo_examen" Header="Tipo de examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_examen_Click"/>
-                <MenuItem x:Name="btTipo_muestra" Header="Tipo de muestra" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_muestra_Click"/>
-                <MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
+				<MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
+				<MenuItem x:Name="btnExamen" Header="Examenes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnExamen_Click"/>
+				<MenuItem x:Name="btnTipo_examen" Header="Tipo de examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_examen_Click"/>
+				<MenuItem x:Name="btTipo_muestra" Header="Tipo de muestra" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_muestra_Click"/>
+				<MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
 			</MenuItem>
-
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Cotizaciones.png" Margin="-4,-15,-25,-14">

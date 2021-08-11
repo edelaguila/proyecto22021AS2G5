@@ -44,8 +44,7 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             try
-            {
- 
+            {      
                 string cadena = "update CLINICA1.REQUERIMIENTOS_CLINICOS set id_requerimiento_clinico ='" + this.txtIdRequerimiento.Text
                     + "',descripcion_requerimiento_clinico ='" + this.txtDescripcion.Text + "',cantidad ='" + this.txtCantidad.Text  + "';";
 
@@ -73,11 +72,12 @@ namespace PrototipoLaboratorio.Ventanas
             txtIdRequerimiento.Text = "";
             txtDescripcion.Text = "";
             txtCantidad.Text = "";
+
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
-
+            
             if (txtBuscar.Text != "")
             {
                 try
@@ -133,24 +133,18 @@ namespace PrototipoLaboratorio.Ventanas
                 OdbcDataReader busqueda;
                 busqueda = consulta.ExecuteReader();
 
-                MessageBox.Show("Datos Eliminados");
-                while (busqueda.Read())
-                {
-                }
-                //MyConn2.Close();
+            txtCantidad.Text = "";
+            txtIdRequerimiento.IsEnabled = true;
+            btnInsertar.IsEnabled = true;
 
-                txtIdRequerimiento.Text = "";
-                txtDescripcion.Text = "";
-                txtCantidad.Text = "";
-                txtIdRequerimiento.IsEnabled = true;
-                btnInsertar.IsEnabled = true;
+            }   
 
-            }
 
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

@@ -73,14 +73,10 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
-
-            txtIdPuesto.Text = "";
-
             lblIdSede.Content = "-";
             lblIdPuesto.Content = "-";
             cbxSede.Items.Clear();
             cbxPuesto.Items.Clear();
-
             txtColegiado.Text = "";
         }
 
@@ -91,7 +87,6 @@ namespace PrototipoLaboratorio.Ventanas
             
                 try
                 {
-
 
                 cargarCbxPuesto();
 
@@ -107,8 +102,9 @@ namespace PrototipoLaboratorio.Ventanas
                         + "',direccion_empleado='" + this.txtDireccion.Text
                         + "',email_empleado='" + this.txtEmail.Text
                         + "',status_empleado='" + this.txtStatus.Text
-                        + "',id_puesto='" + this.txtIdPuesto.Text
+                        + "',id_puesto='" + this.lblIdPuesto.Content
                         + "',colegiado_empleado='" + this.txtColegiado.Text
+                        + "',id_sede='" + lblIdSede.Content 
                         + "',id_puesto='" + this.lblIdPuesto.Content
                         + "',colegiado_empleado='" + this.txtColegiado.Text
                         + "',id_sede='" + lblIdSede.Content 
@@ -138,9 +134,6 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
-            txtIdPuesto.Text = "";
-            txtColegiado.Text = "";
-
             cbxPuesto.Items.Clear();
             txtColegiado.Text = "";
             cbxSede.Items.Clear();
@@ -180,12 +173,13 @@ namespace PrototipoLaboratorio.Ventanas
                         txtDireccion.Text = busqueda["direccion_empleado"].ToString();
                         txtEmail.Text = busqueda["email_empleado"].ToString();
                         txtStatus.Text = busqueda["status_empleado"].ToString();
-                        txtIdPuesto.Text = busqueda["id_puesto"].ToString();
-                        txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
                         lblIdPuesto.Content = busqueda["id_puesto"].ToString();
                         txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
                         lblIdSede.Content = busqueda["id_sede"].ToString();
 
+                        lblIdPuesto.Content = busqueda["id_puesto"].ToString();
+                        txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
+                        lblIdSede.Content = busqueda["id_sede"].ToString();
                     }
                     else
                     {
@@ -221,9 +215,6 @@ namespace PrototipoLaboratorio.Ventanas
             txtDireccion.Text = "";
             txtEmail.Text = "";
             txtStatus.Text = "";
-            txtIdPuesto.Text = "";
-            txtColegiado.Text = "";
-
             cbxPuesto.Items.Clear();
             txtColegiado.Text = "";
             cbxSede.Items.Clear();
@@ -264,16 +255,6 @@ namespace PrototipoLaboratorio.Ventanas
                 txtDireccion.Text = "";
                 txtEmail.Text = "";
                 txtStatus.Text = "";
-                txtIdPuesto.Text = "";
-                txtColegiado.Text = "";
-
-                txtIdEmpleado.IsEnabled = true;
-                btnInsertar.IsEnabled = true;
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
                 cbxPuesto.Items.Clear();
                 txtColegiado.Text = "";
                 cbxSede.Items.Clear();
@@ -283,7 +264,11 @@ namespace PrototipoLaboratorio.Ventanas
                 btnInsertar.IsEnabled = true;
             }
 
-           
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         void cargarCbxPuesto()
