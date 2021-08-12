@@ -45,11 +45,19 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
                 <MenuItem x:Name="btnAgendarCita" Header="Agendar Cita" ItemsSource="{Binding ClickEvent, ElementName=btnAgendarCita}" Click="btnAgendarCita_Click"/>
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnPaquetes" Header="    Paquetes" Width="103" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnPaquetes_Click">
+=======
+				<MenuItem x:Name="menuItem" Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+			</MenuItem>
+			<MenuItem x:Name="btnPaquetes" Header="    Paquetes" Width="103" Background="#FFE3E3E3" FontFamily="Century Gothic">
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 				<MenuItem.Icon>
 					<Image Source="Paquetes.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -57,8 +65,13 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
                 <MenuItem x:Name="btnPaquete" Header="Paquetes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnPaquete_Click"/>
                 <MenuItem Header="MenuItem"/>
+=======
+				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 			</MenuItem>
 			<MenuItem x:Name="btnExamenes" Header="    Exámenes" Width="104" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -68,11 +81,16 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
 				<MenuItem x:Name="btnRequerimientosClinica" Header="RequerimientosC" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnRequerimientosC_Click"/>
 				<MenuItem x:Name="btnExamen" Header="Examenes" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnExamen_Click"/>
 				<MenuItem x:Name="btnTipo_examen" Header="Tipo de examen" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_examen_Click"/>
 				<MenuItem x:Name="btTipo_muestra" Header="Tipo de muestra" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnTipo_muestra_Click"/>
 				<MenuItem x:Name="btnRequerimientosPaciente" Header="RequerimientosP" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnRequerimientosP_Click"/>
+=======
+				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 			</MenuItem>
 			<MenuItem x:Name="btnCotizacion" Header="   Cotizaciones" Width="120" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -82,8 +100,14 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
 				<MenuItem x:Name="___Item_" Header="MenuItem"/>
             </MenuItem>
+=======
+				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+			</MenuItem>
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 			<MenuItem x:Name="btnFacturacion" Header="   Facturación" Width="113" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
 					<Image Source="/Facturacion.png" Margin="-4,-15,-25,-14">
@@ -106,7 +130,11 @@
 				<MenuItem Header="MenuItem"/>
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
+<<<<<<< HEAD
 			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}">
+=======
+			<MenuItem x:Name="btnUsuarios" Header="   Usuarios" Width="96" Background="#FFE3E3E3" Click="btnUsuarios_Click" FontFamily="Century Gothic">
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 				<MenuItem.Icon>
 					<Image Source="/Usuarios.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -115,6 +143,10 @@
 					</Image>
 				</MenuItem.Icon>
 				<MenuItem Name="btnGestionusuario" Header="Gestionar" Click="btnGestionusuario_Click"/>
+<<<<<<< HEAD
+=======
+				<MenuItem x:Name="btnTipousuario" Header="Tipo Usuario" Click="btnTipousuario_Click"/>
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnPersonal" Header="    Personal" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnPersonal_Click">
@@ -125,11 +157,18 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
                 <MenuItem x:Name="btnEmpleado" Header="Empleados" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnEmpleado_Click"/>
                 <MenuItem x:Name="btnPruebaCBX" Header="PruebaCBX" ItemsSource="{Binding ClickEvent, ElementName=btnPruebaCBX}" Click="btnPruebaCBX_Click"/>
                 <MenuItem Header="MenuItem"/>
             </MenuItem>
 			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic">
+=======
+				<MenuItem Header="MenuItem"/>
+				<MenuItem Header="MenuItem"/>
+			</MenuItem>
+			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnFinanzas}">
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 				<MenuItem.Icon>
 					<Image Source="/Finanzas.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -137,10 +176,17 @@
 						</Image.OpacityMask>
 					</Image>
 				</MenuItem.Icon>
+<<<<<<< HEAD
                 <MenuItem x:Name="btnFormas_pago" Header="Formas de pago" ItemsSource="{Binding ClickEvent, ElementName=btnGestionusuario}" Click="btnFormas_pago_Click"/>
                 <MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic">
+=======
+				<MenuItem x:Name="btnTipocambio" Header="Tipo Cambio  " ItemsSource="{Binding ClickEvent, ElementName=btnTipocambio}" Click="btnTipocambio_Click"/>
+				<MenuItem Header="MenuItem"/>
+			</MenuItem>
+			<MenuItem x:Name="btnAdministracion" Header="   Administración" Width="135" Background="#FFE3E3E3" FontFamily="Century Gothic" Click="btnTipocambio_Click">
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 				<MenuItem.Icon>
 					<Image Source="/Administracion.png" Margin="-4,-15,-25,-14">
 						<Image.OpacityMask>
@@ -189,4 +235,8 @@
 		</Button>
 
 	</Grid>
+<<<<<<< HEAD
+=======
+		
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 </Window>

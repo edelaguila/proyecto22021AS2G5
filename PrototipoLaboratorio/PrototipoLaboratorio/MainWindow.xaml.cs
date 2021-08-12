@@ -24,6 +24,7 @@ namespace PrototipoLaboratorio
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -45,6 +46,7 @@ namespace PrototipoLaboratorio
         {
 
         }
+
         private void btnGestionusuario_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.wpfGestorusuario());
@@ -73,7 +75,18 @@ namespace PrototipoLaboratorio
 
         private void btnAgendarCita_Click(object sender, RoutedEventArgs e)
         {
-            funGestorventas(new Ventanas.wpfGestorCitas());
+
+        private void btnGestionusuario_Click(object sender, RoutedEventArgs e){
+            funGestorventas(new Ventanas.wpfGestorusuario());
+        }
+        private void btnTipousuario_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipousuario());
+        }
+        private void btnTipocambio_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipocambio());
+
         }
 
         private void funGestorventas(UserControl control)
@@ -87,6 +100,7 @@ namespace PrototipoLaboratorio
         {
             this.pnlVentanas.Children.Clear();
         }
+
 
         private void btnExamen_Click(object sender, RoutedEventArgs e)
         {

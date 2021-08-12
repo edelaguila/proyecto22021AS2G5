@@ -11,12 +11,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
+	<SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfGestorcaja.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Ventanas\wpfGestorusuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Ventanas\wpfRequerimientosClinica.xaml.cs">
+	<SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ventanas\wpfTipocambio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -48,6 +54,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">
+	  <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorcaja.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorusuario.xaml">
@@ -57,6 +66,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfRequerimientosClinica.xaml">
+  <SubType>Designer</SubType>
+    </Page>
+	<Page Update="Ventanas\wpfTipocambio.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

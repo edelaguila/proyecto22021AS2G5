@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;;
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Examen.xaml;;
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Formas_pago.xaml;;
@@ -16,4 +17,11 @@ FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaborator
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfPuestos.xaml;;
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfRequerimientosClinica.xaml;;
 FC:\Users\kievk\OneDrive\Desktop\Entrega\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfRequerimientosPaciente.xaml;;
+=======
+FC:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;;
+FC:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorusuario.xaml;;
+FC:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfTipocambio.xaml;;
+FC:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfTipousuario.xaml;;
+FC:\DevSoft\cygwin64\home\kievk\Projects\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorcaja.xaml;;
+>>>>>>> b1bf244a3e068ed845574c8543b2836d34161411
 
