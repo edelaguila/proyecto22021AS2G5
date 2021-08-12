@@ -427,6 +427,15 @@
           "lib/netstandard2.1/Zstandard.Net.dll": {}
         }
       },
+      "MySqlConnector/1.3.11": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MySqlConnector.dll": {}
+        }
+      },
       "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "dependencies": {
@@ -1956,6 +1965,37 @@
         "lib/netstandard2.1/Zstandard.Net.dll",
         "mysql.data.8.0.26.nupkg.sha512",
         "mysql.data.nuspec"
+      ]
+    },
+    "MySqlConnector/1.3.11": {
+      "sha512": "CwzHwRTN+zMKYfEpfwWJ2QzI6JtTYujBbrVHp45zq1BttuykQkqGlZYL9ZUwA2x5xTRBJTDZoy9S6kfN6S0Suw==",
+      "type": "package",
+      "path": "mysqlconnector/1.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/netcoreapp2.1/MySqlConnector.dll",
+        "lib/netcoreapp2.1/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard1.3/MySqlConnector.dll",
+        "lib/netstandard1.3/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.1.3.11.nupkg.sha512",
+        "mysqlconnector.nuspec"
       ]
     },
     "Newtonsoft.Json/9.0.1": {
@@ -4445,27 +4485,28 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.10.0",
       "MySql.Data >= 8.0.26",
+      "MySqlConnector >= 1.3.11",
       "System.Data.Odbc >= 5.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sucel\\.nuget\\packages\\": {},
+    "C:\\Users\\kievk\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+      "projectUniqueName": "C:\\Users\\kievk\\OneDrive\\Desktop\\Entrega\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
       "projectName": "PrototipoLaboratorio",
-      "projectPath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
-      "packagesPath": "C:\\Users\\sucel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+      "projectPath": "C:\\Users\\kievk\\OneDrive\\Desktop\\Entrega\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+      "packagesPath": "C:\\Users\\kievk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kievk\\OneDrive\\Desktop\\Entrega\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sucel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kievk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4500,6 +4541,10 @@
             "target": "Package",
             "version": "[8.0.26, )"
           },
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[1.3.11, )"
+          },
           "System.Data.Odbc": {
             "target": "Package",
             "version": "[5.0.0, )"
@@ -4523,7 +4568,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

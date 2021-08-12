@@ -28,7 +28,6 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
             string cadena = "INSERT INTO" +
-
                 " requerimientos_clinicos (id_requerimiento_clinico, descripcion_requerimiento_clinico, cantidad) VALUES (" + "'" + txtIdRequerimiento.Text + "', '"+ txtDescripcion.Text + "', '" + txtCantidad.Text + "' ); ";
 
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
@@ -44,9 +43,11 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             try
-            {      
+            {
+                
                 string cadena = "update CLINICA1.REQUERIMIENTOS_CLINICOS set id_requerimiento_clinico ='" + this.txtIdRequerimiento.Text
                     + "',descripcion_requerimiento_clinico ='" + this.txtDescripcion.Text + "',cantidad ='" + this.txtCantidad.Text  + "';";
+
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -72,12 +73,10 @@ namespace PrototipoLaboratorio.Ventanas
             txtIdRequerimiento.Text = "";
             txtDescripcion.Text = "";
             txtCantidad.Text = "";
-
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
-            
             if (txtBuscar.Text != "")
             {
                 try
@@ -116,29 +115,33 @@ namespace PrototipoLaboratorio.Ventanas
             else
             {
                 MessageBox.Show("Ingrese dato a buscar");
-
             }
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
 
-            try
+            try { 
+            string cadena = "delete from CLINICA1.REQUERIMIENTOS_CLINICOS where id_requerimiento_clinico='" + this.txtIdRequerimiento.Text + "';";
+            
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+
+            OdbcDataReader busqueda;
+            busqueda = consulta.ExecuteReader();
+
+            MessageBox.Show("Datos Eliminados");
+            while (busqueda.Read())
             {
-                string cadena = "delete from CLINICA1.REQUERIMIENTOS_CLINICOS where id_requerimiento_clinico='" + this.txtIdRequerimiento.Text + "';";
+            }
+            //MyConn2.Close();
 
-                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                consulta.ExecuteNonQuery();
-
-                OdbcDataReader busqueda;
-                busqueda = consulta.ExecuteReader();
-
+            txtIdRequerimiento.Text = "";
+            txtDescripcion.Text = "";
             txtCantidad.Text = "";
             txtIdRequerimiento.IsEnabled = true;
             btnInsertar.IsEnabled = true;
-
             }   
-
 
             catch (Exception ex)
             {
@@ -146,5 +149,6 @@ namespace PrototipoLaboratorio.Ventanas
             }
         }
 
+ 
     }
 }

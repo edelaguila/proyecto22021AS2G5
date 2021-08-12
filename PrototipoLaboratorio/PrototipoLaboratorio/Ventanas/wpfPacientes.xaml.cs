@@ -184,7 +184,7 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
-            txtIdEPaciente.Text = "";
+            txtIdPaciente.Text = "";
             txtCui.Text = "";
             txtNit.Text = "";
             txtNombre.Text = "";

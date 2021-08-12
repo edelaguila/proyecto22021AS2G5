@@ -1,4 +1,4 @@
-
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
@@ -21,7 +21,7 @@ namespace PrototipoLaboratorio.Ventanas
     public partial class wpfEmpleados : UserControl
     {
         Conexion cn = new Conexion();
-       
+
         public wpfEmpleados()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace PrototipoLaboratorio.Ventanas
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            
+
             /*
              (id_empleado, cui_empleado, nit_empleado, nombre_empleado, apellido_empleado," +
                 " genero_empleado, edad_empleado, telefono_empleado, direccion_empleado, email_empleado," +
@@ -61,7 +61,7 @@ namespace PrototipoLaboratorio.Ventanas
             consulta.ExecuteNonQuery();
             MessageBox.Show("Inserción realizada");
 
-            
+
             txtIdEmpleado.Text = "";
             txtCui.Text = "";
             txtNit.Text = "";
@@ -83,45 +83,40 @@ namespace PrototipoLaboratorio.Ventanas
         private void btnModificar_Click(object sender, RoutedEventArgs e)
         {
             //string p = this.txtIdEmpleado.Text.Trim();
-            
-            
-                try
-                {
 
+
+            try
+            {
                 cargarCbxPuesto();
+                //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
+                string cadena = "update CLINICA1.EMPLEADO set id_empleado ='" + this.txtIdEmpleado.Text
+                    + "',cui_empleado ='" + this.txtCui.Text
+                    + "',nit_empleado='" + this.txtNit.Text
+                    + "',nombre_empleado='" + this.txtNombre.Text
+                    + "',apellido_empleado='" + this.txtApellido.Text
+                    + "',genero_empleado='" + this.txtGenero.Text
+                    + "',edad_empleado='" + this.txtEdad.Text
+                    + "',telefono_empleado='" + this.txtTelefono.Text
+                    + "',direccion_empleado='" + this.txtDireccion.Text
+                    + "',email_empleado='" + this.txtEmail.Text
+                    + "',status_empleado='" + this.txtStatus.Text
+                    + "',id_puesto='" + this.lblIdPuesto.Content
+                    + "',colegiado_empleado='" + this.txtColegiado.Text
+                    + "',id_sede='" + lblIdSede.Content
 
-                    //string MyConnection2 = "datasource=localhost;port=3306;username=root;password=6182";
-                    string cadena = "update CLINICA1.EMPLEADO set id_empleado ='" + this.txtIdEmpleado.Text
-                        + "',cui_empleado ='" + this.txtCui.Text
-                        + "',nit_empleado='" + this.txtNit.Text
-                        + "',nombre_empleado='" + this.txtNombre.Text
-                        + "',apellido_empleado='" + this.txtApellido.Text
-                        + "',genero_empleado='" + this.txtGenero.Text
-                        + "',edad_empleado='" + this.txtEdad.Text
-                        + "',telefono_empleado='" + this.txtTelefono.Text
-                        + "',direccion_empleado='" + this.txtDireccion.Text
-                        + "',email_empleado='" + this.txtEmail.Text
-                        + "',status_empleado='" + this.txtStatus.Text
-                        + "',id_puesto='" + this.lblIdPuesto.Content
-                        + "',colegiado_empleado='" + this.txtColegiado.Text
-                        + "',id_sede='" + lblIdSede.Content 
-                        + "',id_puesto='" + this.lblIdPuesto.Content
-                        + "',colegiado_empleado='" + this.txtColegiado.Text
-                        + "',id_sede='" + lblIdSede.Content 
-
-                        + "'where id_empleado='" + this.txtIdEmpleado.Text + "';";
+                    + "'where id_empleado='" + this.txtIdEmpleado.Text + "';";
 
 
-                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-                    consulta.ExecuteNonQuery();
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
 
-                    MessageBox.Show("Modificacion realizada");
+                MessageBox.Show("Modificacion realizada");
 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             txtIdEmpleado.Text = "";
             txtCui.Text = "";
@@ -176,10 +171,6 @@ namespace PrototipoLaboratorio.Ventanas
                         lblIdPuesto.Content = busqueda["id_puesto"].ToString();
                         txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
                         lblIdSede.Content = busqueda["id_sede"].ToString();
-
-                        lblIdPuesto.Content = busqueda["id_puesto"].ToString();
-                        txtColegiado.Text = busqueda["colegiado_empleado"].ToString();
-                        lblIdSede.Content = busqueda["id_sede"].ToString();
                     }
                     else
                     {
@@ -228,9 +219,9 @@ namespace PrototipoLaboratorio.Ventanas
         {
             try
             {
-                
+
                 string cadena = "delete from CLINICA1.EMPLEADO where id_empleado='" + this.txtIdEmpleado.Text + "';";
-                
+
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
@@ -242,7 +233,7 @@ namespace PrototipoLaboratorio.Ventanas
                 while (busqueda.Read())
                 {
                 }
-                
+
 
                 txtIdEmpleado.Text = "";
                 txtCui.Text = "";
@@ -268,80 +259,102 @@ namespace PrototipoLaboratorio.Ventanas
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         void cargarCbxPuesto()
         {
-
-            string cadena = "SELECT nombre_puesto FROM PUESTO";
-
-            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-            consulta.ExecuteNonQuery();
-
-            OdbcDataReader busqueda;
-            busqueda = consulta.ExecuteReader();
-
-            cbxPuesto.Items.Clear();
-            while (busqueda.Read())
+            try
             {
-                cbxPuesto.Items.Add(busqueda["nombre_puesto"].ToString());
+                string cadena = "SELECT nombre_puesto FROM PUESTO";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
+
+                cbxPuesto.Items.Clear();
+                while (busqueda.Read())
+                {
+                    cbxPuesto.Items.Add(busqueda["nombre_puesto"].ToString());
+                }
+
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cbxPuesto_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string cadena = "SELECT id_puesto FROM PUESTO WHERE nombre_puesto = '" + cbxPuesto.SelectedItem + "';";
-
-            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-            consulta.ExecuteNonQuery();
-
-            OdbcDataReader busqueda;
-            busqueda = consulta.ExecuteReader();
-
-            while (busqueda.Read())
+            try
             {
-                lblIdPuesto.Content = busqueda["id_puesto"].ToString();
+                string cadena = "SELECT id_puesto FROM PUESTO WHERE nombre_puesto = '" + cbxPuesto.SelectedItem + "';";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
+
+                while (busqueda.Read())
+                {
+                    lblIdPuesto.Content = busqueda["id_puesto"].ToString();
+                }
             }
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+    }
 
         /*COMBO BOX SEDE*/
         void cargarCbxSede()
-        {
-
-            string cadena = "SELECT nombre_sede FROM SEDE";
-
-            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-            consulta.ExecuteNonQuery();
-
-            OdbcDataReader busqueda;
-            busqueda = consulta.ExecuteReader();
-
-            cbxSede.Items.Clear();
-            while (busqueda.Read())
             {
-                cbxSede.Items.Add(busqueda["nombre_sede"].ToString());
+                try{
+
+                string cadena = "SELECT nombre_sede FROM SEDE";
+
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
+
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
+
+                cbxSede.Items.Clear();
+                while (busqueda.Read())
+                {
+                    cbxSede.Items.Add(busqueda["nombre_sede"].ToString());
+                }
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cbxSede_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string cadena = "SELECT id_sede FROM SEDE WHERE nombre_sede = '" + cbxSede.SelectedItem + "';";
+            try {
+                string cadena = "SELECT id_sede FROM SEDE WHERE nombre_sede = '" + cbxSede.SelectedItem + "';";
 
-            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-            consulta.ExecuteNonQuery();
+                OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                consulta.ExecuteNonQuery();
 
-            OdbcDataReader busqueda;
-            busqueda = consulta.ExecuteReader();
+                OdbcDataReader busqueda;
+                busqueda = consulta.ExecuteReader();
 
-            while (busqueda.Read())
+                while (busqueda.Read())
+                {
+                    lblIdSede.Content = busqueda["id_sede"].ToString();
+                }
+            }
+            catch (Exception ex)
             {
-                lblIdSede.Content = busqueda["id_sede"].ToString();
+                MessageBox.Show(ex.Message);
             }
         }
     }
+    
 }
