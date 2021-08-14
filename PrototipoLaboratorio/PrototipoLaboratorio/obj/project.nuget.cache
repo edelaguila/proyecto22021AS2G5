@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zUfwH3ap9xdd0tryFaunqct5TSHDDOnXlzNmOUCQtYmDe/BHEyz7vrFx4euMAVoCEuIc1rPUvRIA7nRpcGsgYQ==",
+  "dgSpecHash": "H9r8DGsd3Hnz1Tlht/jYunXPqhzqR5sV3UrLSu4jpyTSXTLkyf3In8FVI1s/WjIgrwHYuHHqPegIk5UZqEeUhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sucel\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+  "projectFilePath": "C:\\Users\\sucel\\Desktop\\PROYECTO\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sucel\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\sucel\\.nuget\\packages\\databasic.core\\1.2.8\\databasic.core.1.2.8.nupkg.sha512",
+    "C:\\Users\\sucel\\.nuget\\packages\\databasic.odbcsql\\1.2.8\\databasic.odbcsql.1.2.8.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\horseshoe.net\\1.2.4.2\\horseshoe.net.1.2.4.2.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\horseshoe.net.odbc\\1.2.4.2\\horseshoe.net.odbc.1.2.4.2.nupkg.sha512",
@@ -47,5 +49,26 @@
     "C:\\Users\\sucel\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\sucel\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Databasic.Core 1.2.8\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Databasic.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Databasic.OdbcSql 1.2.8\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Databasic.OdbcSql",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
