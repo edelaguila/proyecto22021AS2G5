@@ -26,6 +26,10 @@ foreign key (id_tipo_usuario) references TIPO_USUARIO(id_tipo_usuario)
 
 insert into usuarios values ("1", "1", "Mel", "MelYJustin4evah", "1");
 insert into usuarios values ("2", "1", "Sebas", "SebasYMel2021", "1");
+insert into usuarios values ("3", "1", "Kevin", "grupo5", "1");
+insert into usuarios values ("4", "1", "Heydi", "grupo5", "1");
+insert into usuarios values ("5", "1", "Ashly", "grupo5", "1");
+insert into usuarios values ("6", "1", "Danny", "grupo5", "1");
 
 select * from usuarios;
 #FORMAS DE PAGO Y RELACIONADOS
