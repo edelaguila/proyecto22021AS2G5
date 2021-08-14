@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\obj\Debug\netcoreapp3.1\
 PrototipoLaboratorio
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
-7-1224862177
+D:\UMG\Año4\Semestre 2\Analisis De Sistemas 2\ProyectoLaboratorio\Desktop\PrototipoLaboratorio\PrototipoLaboratorio\App.xaml
+20-1750963106
 
-121568160565
-2011894084544
-MainWindow.xaml;Ventanas\PruebaComboBox.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorCitas.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfRequerimientosClinica.xaml;Ventanas\wpfRequerimientosPaciente.xaml;
+26-878229295
+2281235196241
+loginscreen.xaml;MainWindow.xaml;Ventanas\Examen.xaml;Ventanas\Formas_pago.xaml;Ventanas\Paquete.xaml;Ventanas\Tipo_examen.xaml;Ventanas\Tipo_muestra.xaml;Ventanas\wfpDescuentosaseguradoras.xaml;Ventanas\wpfAseguradoras.xaml;Ventanas\wpfCotizaciones.xaml;Ventanas\wpfEmpleados.xaml;Ventanas\wpfGestorcaja.xaml;Ventanas\wpfGestorCitas.xaml;Ventanas\wpfGestorusuario.xaml;Ventanas\wpfPacientes.xaml;Ventanas\wpfPuestos.xaml;Ventanas\wpfRequerimientosClinica.xaml;Ventanas\wpfRequerimientosPaciente.xaml;Ventanas\wpfTipocambio.xaml;Ventanas\wpfTipousuario.xaml;
 
-False
+True
 

@@ -7,33 +7,51 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Ventanas\PruebaComboBox.xaml.cs">
+    <Compile Update="loginscreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Ventanas\wpfEmpleados.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Ventanas\wpfGestorCitas.xaml.cs">
+    <Compile Update="Ventanas\wpfGestorcaja.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Ventanas\wpfGestorusuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Ventanas\wpfRequerimientosClinica.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Ventanas\wpfRequerimientosPaciente.xaml.cs">
+    <Compile Update="Ventanas\wpfTipocambio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="loginscreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Ventanas\PruebaComboBox.xaml">
+    <Page Update="Ventanas\Examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Formas_pago.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Paquete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_examen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\Tipo_muestra.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wfpDescuentosaseguradoras.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAseguradoras.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfEmpleados.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfGestorcaja.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfGestorCitas.xaml">
@@ -42,10 +60,19 @@
     <Page Update="Ventanas\wpfGestorusuario.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Ventanas\wpfPacientes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfPuestos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Ventanas\wpfRequerimientosClinica.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfRequerimientosPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfTipocambio.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

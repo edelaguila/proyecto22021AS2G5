@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
+    "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {}
   },
   "projects": {
-    "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
+    "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectUniqueName": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "projectName": "PrototipoLaboratorio",
-        "projectPath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
+        "projectPath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\PrototipoLaboratorio.csproj",
         "packagesPath": "C:\\Users\\SEBAS\\.nuget\\packages\\",
-        "outputPath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\proyecto22021AS2G5\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
+        "outputPath": "D:\\UMG\\Año4\\Semestre 2\\Analisis De Sistemas 2\\ProyectoLaboratorio\\Desktop\\PrototipoLaboratorio\\PrototipoLaboratorio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Databasic.OdbcSql": {
+              "target": "Package",
+              "version": "[1.2.8, )"
+            },
+            "Horseshoe.NET.Odbc": {
+              "target": "Package",
+              "version": "[1.2.4.2, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.26, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.11, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "System.Data.Odbc": {
               "target": "Package",
               "version": "[5.0.0, )"

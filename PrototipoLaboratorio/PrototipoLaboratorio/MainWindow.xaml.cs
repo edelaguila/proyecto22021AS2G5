@@ -24,14 +24,10 @@ namespace PrototipoLaboratorio
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
 
         }
@@ -48,21 +44,33 @@ namespace PrototipoLaboratorio
         private void btnGestionusuario_Click(object sender, RoutedEventArgs e){
             funGestorventas(new Ventanas.wpfGestorusuario());
         }
+        private void btnTipousuario_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipousuario());
+        }
+        private void btnTipocambio_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfTipocambio());
+        }
+
+        private void btnGestionaraseguradora_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfAseguradoras());
+        }
+
+        private void btnDescuentoaseguradoras_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wfpDescuentosaseguradoras());
+        }
 
         private void btnEmpleado_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.wpfEmpleados());
         }
 
-
         private void btnRequerimientosC_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.wpfRequerimientosClinica());
-        }
-
-        private void btnPruebaCBX_Click(object sender, RoutedEventArgs e)
-        {
-            funGestorventas(new Ventanas.PruebaComboBox());
         }
 
         private void btnRequerimientosP_Click(object sender, RoutedEventArgs e)
@@ -75,19 +83,50 @@ namespace PrototipoLaboratorio
             funGestorventas(new Ventanas.wpfGestorCitas());
         }
 
+        private void btnGestorpacientes_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfPacientes());
+        }
+
+        private void btnGestorPuestos_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.wpfPuestos());
+        }
+        private void btnExamen_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Examen());
+        }
+
+        private void btnTipo_muestra_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Tipo_muestra());
+        }
+
+        private void btnTipo_examen_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Tipo_examen());
+        }
+
+        private void btnFormas_pago_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Formas_pago());
+        }
+
+        private void btnPaquete_Click(object sender, RoutedEventArgs e)
+        {
+            funGestorventas(new Ventanas.Paquete());
+        }
+
         private void funGestorventas(UserControl control)
         {
             this.pnlVentanas.Children.Clear();
             this.pnlVentanas.Children.Add(control);
         }
 
-
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
             this.pnlVentanas.Children.Clear();
         }
-
-
     }
 
 }
