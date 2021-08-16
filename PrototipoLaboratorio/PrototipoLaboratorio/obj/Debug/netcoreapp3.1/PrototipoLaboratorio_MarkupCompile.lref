@@ -2,6 +2,7 @@
 
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\loginscreen.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\MainWindow.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\rptPaciente.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Examen.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Formas_pago.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Paquete.xaml;;
@@ -9,6 +10,7 @@ FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventan
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\Tipo_muestra.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wfpDescuentosaseguradoras.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAseguradoras.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfCotizaciones.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfEmpleados.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestionarEtiqueta.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfGestorcaja.xaml;;
@@ -21,6 +23,12 @@ FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventan
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfTipocambio.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfTipousuario.xaml;;
 FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfVentanaAyuda.xaml;;
-FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\rptPaciente.xaml;;
-FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfCotizaciones.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaAdministracion.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaAseguradora.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaCotizacion.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaExamenes.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaFinanzas.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaPaquetes.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaPersonal.xaml;;
+FG:\Git\PLAB\proyecto22021AS2G5\PrototipoLaboratorio\PrototipoLaboratorio\Ventanas\wpfAyudaUsuario.xaml;;
 

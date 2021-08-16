@@ -22,9 +22,6 @@
     <Compile Update="Ventanas\wpfTipocambio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Ventanas\wpfVentanaAyuda.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="loginscreen.xaml">
@@ -55,6 +52,30 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfAseguradoras.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaAdministracion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaAseguradora.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaCotizacion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaExamenes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaFinanzas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaPaquetes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaPersonal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ventanas\wpfAyudaUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Ventanas\wpfCotizaciones.xaml">

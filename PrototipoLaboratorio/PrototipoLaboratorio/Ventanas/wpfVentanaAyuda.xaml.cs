@@ -10,6 +10,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
+
+
+
 
 namespace PrototipoLaboratorio.Ventanas
 {
@@ -21,6 +25,11 @@ namespace PrototipoLaboratorio.Ventanas
         public wpfVentanaAyuda()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://drive.google.com/file/d/1yN07bjkcKQhoRkTLmJBcsCXtUIhvKOZz/view?usp=sharing") { UseShellExecute = true });
         }
     }
 }

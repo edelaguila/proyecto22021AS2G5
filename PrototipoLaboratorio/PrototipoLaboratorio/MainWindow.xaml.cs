@@ -124,6 +124,38 @@ namespace PrototipoLaboratorio
         {
             funGestorventas(new Ventanas.wpfVentanaAyuda());
         }
+        private void btnAyudaPaquetes_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaPaquetes();
+        }
+        private void btnAyudaCotizacion_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaCotizacion();
+        }
+        private void btnAyudaExamenes_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaExamenes();
+        }
+        private void btnAyudaAseguradora_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaAseguradora();
+        }
+        private void btnAyudaUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaUsuario();
+        }
+        private void btnAyudaPersonal_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaPersonal();
+        }
+        private void btnAyudaFinanzas_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaFinanzas();
+        }
+        private void btnAyudaAdministracion_Click(object sender, RoutedEventArgs e)
+        {
+            new Ventanas.wpfAyudaPaquetes();
+        }
         private void btnCotizaciones_Click(object sender, RoutedEventArgs e)
         {
             funGestorventas(new Ventanas.wpfCotizaciones());
