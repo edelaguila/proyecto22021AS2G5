@@ -30,7 +30,7 @@ namespace PrototipoLaboratorio.Ventanas
             try
             {
                 string cadena = "INSERT INTO" +
-                " PUESTOS (id_puesto, nombre_puesto, status_puesto) VALUES (" + "'" + txtIdPuesto.Text + "', '"+ txtNombrePuesto.Text + txtEstatusPuesto.Text + "' ); ";
+                " CLINICA1.PUESTOS (id_puesto, nombre_puesto, status_puesto) VALUES (" + "'" + txtIdPuesto.Text + "', '"+ txtNombrePuesto.Text + txtEstatusPuesto.Text + "' ); ";
 
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();

@@ -6,21 +6,14 @@
              xmlns:local="clr-namespace:PrototipoLaboratorio.Ventanas"
              mc:Ignorable="d" 
              d:DesignHeight="750" d:DesignWidth="1310">
-	<Grid>
-		<Grid x:Name="Gestión_de_Aseguradoras">
-			<Grid.Background>
-				<ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
-			</Grid.Background>
-			<TextBox x:Name="txtDescripcion" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="1030" Height="406" TextAlignment="Left" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center" BorderBrush="{x:Null}" >
-				<TextBox.CaretBrush>
-					<SolidColorBrush Color="Black" Opacity="0.3"/>
-				</TextBox.CaretBrush>
-				<TextBox.Background>
-					<SolidColorBrush Color="#FF2FB0C8" Opacity="0.15"/>
-				</TextBox.Background>
-			</TextBox>
-			<Label x:Name="lblDescripcion" Content="Descripcion:" HorizontalAlignment="Left" Margin="140,118,0,0" VerticalAlignment="Top" Height="38" Width="364" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
-		</Grid>
+    <Grid>
+        <Grid x:Name="Gestión_de_Aseguradoras" Margin="187,78,-187,-78">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Ventanas/fondo_2.jpg"/>
+            </Grid.Background>
+            <Label x:Name="lblDescripcion" Content="Ver archivo de ayuda:" HorizontalAlignment="Left" Margin="153,102,0,0" VerticalAlignment="Top" Height="38" Width="364" FontSize="14" FontFamily="Century Gothic" VerticalContentAlignment="Center"/>
+            <Button Content="Ayuda" HorizontalAlignment="Left" Height="120" Margin="153,172,0,0" VerticalAlignment="Top" Width="309" Click="Button_Click"/>
+        </Grid>
 
-	</Grid>
+    </Grid>
 </UserControl>

@@ -42,7 +42,6 @@
 					</Image>
 				</MenuItem.Icon>
 				<MenuItem x:Name="btnGestorPaquete" Header="Paquetes" ItemsSource="{Binding ClickEvent, ElementName=btnGestorPaquete}" Click="btnPaquete_Click"/>
-				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnExamenes" Header="    Exámenes" Width="104" Background="#FFE3E3E3" FontFamily="Century Gothic">
 				<MenuItem.Icon>
@@ -111,7 +110,6 @@
 					</Image>
 				</MenuItem.Icon>
 				<MenuItem x:Name="btnEmpleado" Header="Empleados" ItemsSource="{Binding ClickEvent, ElementName=btnEmpleado}" Click="btnEmpleado_Click"/>
-				<MenuItem Header="MenuItem"/>
 			</MenuItem>
 			<MenuItem x:Name="btnFinanzas" Header="    Finanzas" Width="94" Background="#FFE3E3E3" FontFamily="Century Gothic" ItemsSource="{Binding ClickEvent, ElementName=btnFinanzas}">
 				<MenuItem.Icon>
@@ -147,43 +145,21 @@
 				<MenuItem x:Name="btnAyudaCita" Header="Citas" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaCita}" Click="btnVentanaAyuda_Click" >
 					<MenuItem x:Name="btnSAgendarCita" Header="Gestionar cita"/>
 				</MenuItem>
-				<MenuItem x:Name="btnAyudaPaquete" Header="Paquetes">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaExamens" Header="Exámenes">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaCotizaciones" Header="Cotizaciones">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaFacturacion" Header="Cotización">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaAseguradoras" Header="Aseguradora">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaUsuario" Header="Usuario">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaPersonal" Header="Personal">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaFinanzas" Header="Finanzas">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
-				<MenuItem x:Name="btnAyudaAdministracion" Header="Administración">
-					<MenuItem Header="MenuItem"/>
-				</MenuItem>
+				<MenuItem x:Name="btnAyudaPaquete" Header="Paquetes" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaPaquetes}" Click="btnAyudaPaquetes_Click"/>
+				<MenuItem x:Name="btnAyudaExamens" Header="Exámenes" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaExamenes}" Click="btnAyudaExamenes_Click"/>
+				<MenuItem x:Name="btnAyudaAseguradoras" Header="Aseguradora" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaAseguradora}" Click="btnAyudaAseguradora_Click"/>
+				<MenuItem x:Name="btnAyudaUsuario" Header="Usuario" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaUsuario}" Click="btnAyudaUsuario_Click"/>
+				<MenuItem x:Name="btnAyudaFinanzas" Header="Finanzas" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaFinanzas}" Click="btnAyudaFinanzas_Click"/>
+				<MenuItem x:Name="btnAyudaAdministracion" Header="Administración" ItemsSource="{Binding ClickEvent, ElementName=btnAyudaAdministracion}" Click="btnAyudaAdministracion_Click"/>
 			</MenuItem>
 
 		</Menu>
-		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0">
-			<Button x:Name="btnSignOut" Content="" HorizontalAlignment="Left" Margin="1251,-50,0,0" VerticalAlignment="Top" Height="36" Click="btnSignOut_Click" Width="36" BorderBrush="{x:Null}" >
-				<Button.Background>
-					<ImageBrush Stretch="UniformToFill" ImageSource="/signout.png"/>
-				</Button.Background>
-			</Button>
-		</Grid>
+		<Button x:Name="btnSignOut" Content="" HorizontalAlignment="Left" Margin="1264,1,0,0" VerticalAlignment="Top" Height="31" Click="btnSignOut_Click" Width="29" BorderBrush="{x:Null}" Grid.Column="1" >
+			<Button.Background>
+				<ImageBrush Stretch="UniformToFill" ImageSource="/signout.png"/>
+			</Button.Background>
+		</Button>
+		<Grid x:Name="pnlVentanas" Grid.ColumnSpan="2" Margin="0,50,0,0"/>
 		<Rectangle HorizontalAlignment="Left" Height="76" Margin="1106,33,0,0" VerticalAlignment="Top" Width="180" RadiusX="19" RadiusY="19" Opacity="0.31" Fill="#FFC6D7DF" Grid.Column="1">
 			<Rectangle.Stroke>
 				<SolidColorBrush Color="#FF015478" Opacity="0.31"/>

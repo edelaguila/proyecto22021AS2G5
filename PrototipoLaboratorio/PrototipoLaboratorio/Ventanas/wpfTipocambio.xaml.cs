@@ -26,6 +26,7 @@ namespace PrototipoLaboratorio.Ventanas
             InitializeComponent();
             Cargartabla();
             txtIdmoneda.Focus();
+           
         }
 
         //RadioButton
@@ -231,7 +232,7 @@ namespace PrototipoLaboratorio.Ventanas
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+                rbnestado();
                 txtIdmoneda.IsEnabled = false;
                 btnInsertar.IsEnabled = false;               
                 btnEliminar.IsEnabled = true;
